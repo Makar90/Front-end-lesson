@@ -25,15 +25,30 @@ img {
     line-height: 21px;
     text-align: center;
     color: #070707; 
-    margin-bottom: 99px; 
+    margin-bottom: 99px;
+    text-decoration-line: underline; 
+    /*margin:auto;*/
 }
 /*Global styles end*/
 
-
+.page-text-nonudnrline {
+    text-decoration-line: none;
+}
 .portfolio__container {
+    /*background: #9c95df;*/
     max-width: 936px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 1px 16px;
+    /*padding-top: 112px;
+    padding-bottom: 96px;*/
+}
+.portfolio-item{
+    background: #c0df95;
+    max-width: 936px;
+    margin: 0 auto;
+    padding: 0px 16px;  
+    /*сильно стриба поддінг при зміні на 1. По ідеї має збільшуватись на +1 піксель 
+    відступ від тексту, а збільшується згачно більше*/
 }
 
 .portfolio__title {
@@ -48,11 +63,8 @@ img {
 }
 
 .portfolio__img {
-    /*width: 936.24px;*/
     min-width: 500px;
     margin-bottom: 44px;
 }
 
-.portfolio__text {
-    text-decoration-line: underline;
-}
+
