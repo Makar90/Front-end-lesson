@@ -4,15 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 img {
     width: 100%;
 }
-
+/* Fixed banner img PDF status*/
 .top-boarder{
     position: fixed;
 }
+/* Global styles end*/
 
+
+
+.page-wrapper{
+    background-color: gray;
+    /*padding-top: 112px;
+    padding-bottom: 96px;*/
+}
 .h1{
     padding: 165px 0px 30px;
     font-family: sans-serif;
@@ -20,11 +27,6 @@ img {
     font-weight: 450;
 }
 
-.page-wrapper{
-    background-color: gray;
-    /*padding-top: 112px;
-    padding-bottom: 96px;*/
-}
 
 .content-whte-list{
     background-color: white; 
@@ -34,37 +36,42 @@ img {
 }
 
 .content-whte-list__container{
-    background-color: green;
+    /*background-color: green;*/
     max-width: 600px;
     margin: 0 auto;
-    /*padding: 1px 16px;*/
 }
-/* Global styles end*/
-
 
 .h2 {
+    padding: 50px 0px 30px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.content__img--caption{
     padding: 14px 0px 25px;
     font-family: sans-serif;
     font-size: 30px;
     font-weight: 400;
 }
 
-.header{
-    /*padding-top: 80px;*/
-} 
-
 .content-whte-list__text{
     font-family: sans-serif;
     font-size: 17px;
     font-weight: 10;
 }
-
 .paragraf{
     padding: 20px 0px 1px;
 }
 
-.content__img{
-    width:200px;
+.content-whte-list__list{
+    padding: 20px 0px 1px;
+    margin-left: 40px;
+}
+
+.content-whte-list__figure{
+    padding: 20px 0 20px;*/
+    width: 100%;
 }
 
 /**/
