@@ -70,8 +70,14 @@ img {
 }
 
 .content-whte-list__figure{
-    padding: 20px 0 20px;*/
+    padding: 20px 0 20px;
     width: 100%;
+}
+
+.frame1{
+    border:10px;
+    width:100%;
+    height:300px;
 }
 
 /**/
