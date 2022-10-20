@@ -1,0 +1,16 @@
+.hero .title{
+    color:red;
+}
+
+title, .text1{
+    color: red;
+}
+
+.hero> .text{
+    color:blue;
+}
+
+.container{
+    background-color: yellow;
+    padding: 20px;
+}
