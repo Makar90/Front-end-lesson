@@ -1,14 +1,38 @@
+/*
 .hero .title{
     color:red;
 }
 
-title, .text1{
+title, .text{
     color: red;
-}
+}*/
 
-.hero> .text{
+.hero > .text{
     color:blue;
 }
+
+.hero~.text{
+    color:gold;
+}
+
+.text1 ~ .text{
+    color:gold;
+}
+
+
+.skills__title~.skills__nav {
+    width: 20px;
+    height: 20px;
+    background: red;
+
+}
+/*
+.skills__title~.skills__nav {
+    width: 20px;
+    height: 20px;
+    background: red;
+    margin: 5px;
+}*/
 
 .container{
     background-color: yellow;
