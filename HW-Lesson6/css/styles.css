@@ -1,0 +1,89 @@
+/*Global styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: yellow;
+}
+.wrapper{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #FF8984;
+}
+.tabItem{
+    margin: 0 auto;
+    max-width: 80%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+/*Global styles END*/
+
+/*Header*/
+.headerBox {
+    padding-top: 19px;
+    padding-bottom: 9px;
+    background: #4A4F56;
+    text-align: center;
+}
+.headerBox__head {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.headerBox__paragraf {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+/*Header END*/
+
+/*Main*/
+.mainBox {
+    padding-top: 20px;
+    padding-bottom: 45px;
+    background: #3B3F45;
+}
+
+.mainBox__tabCheckbox {
+
+}
+.mainBox__tabCheckbox--item {
+    padding: 11px 0px 13px 0px;
+    background: #88839E;
+    color: #FFFFFF;
+}
+.mainBox__tabCheckbox--item--checkbox{
+
+}
+.mainBox__tabCheckbox--item--checkbox--label{
+
+}
+.mainBox__tabCheckbox--item--checkbox--textAbove {
+
+}
+
+
+.mainBox__tabSubmit{
+    margin-top:45px;
+}
+.mainBox__tabSubmit--item{
+    /*В середині знаходяться баттони. Чому стиль заданий тут до них не застосовується? */
+}
+
+.mainBox__tabSubmit--item--submit {
+    width: 100%;
+    padding: 12px 0px;
+    background: #4A4F56;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FF8984;
+}
+/*Main END*/
