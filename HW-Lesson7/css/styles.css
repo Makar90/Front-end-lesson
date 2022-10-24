@@ -27,6 +27,7 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    border:3px solid transparent;
 }
 /*Global styles END*/
 
@@ -126,6 +127,9 @@ body{
 }
 .mainBox__tabSubmit--item--submit:hover{
     background-color: rgba(0, 128, 0, 0.096);    
+}
+.mainBox__tabSubmit--item--submit:active{
+    box-shadow: 1px 1px gray;
 }
 
 /*Main END*/
