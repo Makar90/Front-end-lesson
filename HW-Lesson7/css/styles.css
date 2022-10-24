@@ -2,19 +2,28 @@
 * {
     margin: 0;
     padding: 0;
+    transition: all .1s ease-in;
 }
+
 body{
-    background-color: yellow;
+    background-color: rgb(255, 255, 0.5);
+    /*
+    Чому контент не розтягується на всю сторінку
+    Коли дивишся на великому моніторі присутня область де закінчується контент підсвітив жовтим
+    */
+    border: white;
+    border-style: solid;
+    border-width: 10px;
 }
 .wrapper{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: #FF8984;
 }
 .tabItem{
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 70%;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -49,29 +58,53 @@ body{
 }
 
 .mainBox__tabCheckbox {
-
+/**/
 }
 .mainBox__tabCheckbox--item {
-    padding: 11px 0px 13px 0px;
+    display: flex;
     background: #88839E;
     color: #FFFFFF;
 }
+.mainBox__tabCheckbox--item:nth-child(2n+2){
+    background: rgb(119, 115, 137);
+}
+.mainBox__tabCheckbox--item:nth-child(2) {
+    margin-bottom: 2px;
+    box-shadow: 2px 3px rgba(243, 219, 4, 0.371);
+}
+.mainBox__tabCheckbox--item:hover{
+    border-width: 3px 0px; 
+    border-style: solid;
+    border-color: #FFFFFF;
+    background: #625E77;
+}
+.mainBox__tabCheckbox--item:active {
+    background-color: rgb(223, 102, 102);
+}
 .mainBox__tabCheckbox--item--checkbox{
-
+    margin-left:10px;
+}
+.mainBox__tabCheckbox--item--checkbox:checked + .mainBox__tabCheckbox--item--checkbox--label{
+    text-decoration:line-through;
 }
 .mainBox__tabCheckbox--item--checkbox--label{
-
+    display: block;
+    padding: 11px 0px 13px 0px;
+    width: 100%;
 }
 .mainBox__tabCheckbox--item--checkbox--textAbove {
-
+/**/
 }
 
-
 .mainBox__tabSubmit{
+    align-items: center;
     margin-top:45px;
 }
 .mainBox__tabSubmit--item{
-    /*В середині знаходяться баттони. Чому стиль заданий тут до них не застосовується? */
+    /*
+    В середині знаходяться баттони. 
+    Чому стилі задані на рівні main класу tabItem  та на рівні класу mainBox__tabSubmit--item до них не застосовуються?
+    */
 }
 
 .mainBox__tabSubmit--item--submit {
@@ -86,4 +119,12 @@ body{
 
     color: #FF8984;
 }
+.mainBox__tabSubmit--item--submit:hover{
+    background-color: rgba(0, 128, 0, 0.096);    
+}
+
+/*span{
+    font-size: 5px;
+    aligne-
+}*/
 /*Main END*/
