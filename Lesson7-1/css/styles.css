@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #C4C4C4;
+    padding: 1px 11px 1px 11px;
+}
+
+.containerMain {
+    min-width: 272px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding: 1px 9px;
+
+    background: #AA3939;
+}
+
+.containerMain-minHeight {
+    min-height: 43px;
+}
+
+.containerSecond {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    padding: 1px 13px;
+    min-width: 256px;
+    min-height: 47px;
+    background: #2C31B8;
+}
+
+.containerThird {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    min-width: 230px;
+    min-height: 57px;
+    background: #3DDE44;
+}
+
+.paragraf {
+    margin: 0 auto;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    min-width: 269px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #000000;
+}
