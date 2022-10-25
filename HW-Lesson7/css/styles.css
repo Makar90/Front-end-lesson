@@ -84,6 +84,7 @@ body{
 }
 .mainBox__tabCheckbox--item--checkbox{
     margin-left:10px;
+    margin-right:10px;
 }
 .mainBox__tabCheckbox--item--checkbox:checked + .mainBox__tabCheckbox--item--checkbox--label{
     text-decoration:line-through;
