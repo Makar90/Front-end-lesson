@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #C4C4C4;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #000000;
+    padding: 23px 24px 52px 16px;
+}
+
+.head{
+    margin-left:8px;
+}
+
+.nav {
+    margin-top: 14px;
+    margin-left:27px;
+}
+
+.content {
+    margin-top: 18px;
+    max-width: 269px;
+    max-height: 128px;
+}
+
+.label {
+    display: block;
+}
+.head2{
+    padding-bottom:18px;
+}
+
+.form {
+    margin-top: 9px;
+    padding: 18px 10px;
+    width: 188px;
+    height: 202px;
+    background: white;
+}
