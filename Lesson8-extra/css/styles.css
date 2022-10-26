@@ -6,22 +6,15 @@
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 75px;
     margin: 50px 0px;
     flex-wrap: wrap;
     /*Extra2*/
-
-        gap: 75px;
+    /*
         justify-content: start;
-
-    /*Extra2 end*/
-
-    /*Extra3*/
-    /*      
-        gap: 75px;
-        justify-content: center;
     */
-    /*Extra3 end*/
+    /*Extra2 end*/
 }
 
 .box {
