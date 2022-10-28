@@ -94,8 +94,11 @@ header {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-
     color: #2f281e;
+}
+.button:active,
+.buttonY:active{
+    box-shadow: 1px 1px gray;
 }
 #sindIn {
     background: rgb(255, 255, 255, 0);
@@ -167,6 +170,7 @@ header {
     top: 348px;
     background: #FF9900;
     border-radius: 4px;
+    
 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -175,6 +179,9 @@ header {
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
+}
+.firstScreen__button:active{
+    box-shadow: 1px 1px gray;
 }
 
 .firstScreen__image--image {

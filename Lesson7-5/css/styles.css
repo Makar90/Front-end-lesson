@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    padding:106px 80px 57px 81px;
+    background: #C4C4C4;
+    max-width: 1339px;
+}
+
+.redBlock{
+    display: flex;
+    height: 164px;
+    margin-bottom: 79px;
+    background: #DC3F3F;
+}
+.redBlock:last-child{
+    margin-bottom: 0;
+}
+
+.redBlock:nth-child(2){
+    padding-left: 90px;
+    padding-right: 125px;
+}
+
+.blackBlock{
+    background: #412A2A;
+    width: 200px;
+    height: 165px;
+}
+.blackBlock:nth-child(1){
+    margin-right: 171px;
+}
+.blackBlock:nth-child(2){
+    margin-right: 193px;
+}

@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;;
+}
+.wrapper{
+    padding: 60px 80px 80px 97px;
+    background: #C4C4C4;
+}
+.boxRed{
+    min-width: 1162px;
+    min-height: 165px;
+    margin-bottom: 59px;
+    background: #DC3F3F;
+}
+.boxRed:last-child{
+    margin-bottom: 0;
+}
+.boxRed:nth-child(2){
+    padding: 54px 46px 41px 50px;
+}
+
+.boxBlack{
+    min-width: 1066px;
+    min-height: 165px;
+    margin-bottom: 34px;
+    background: #412A2A;
+}
+.boxBlack:last-child{
+    margin-bottom: 0;
+}
