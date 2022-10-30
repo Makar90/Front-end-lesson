@@ -29,3 +29,11 @@
 .boxBlack:last-child{
     margin-bottom: 0;
 }
+
+.color{
+    display: inline;
+    width: 20px;
+    height:20px;
+    padding: 20px;
+    margin: 381px;
+}

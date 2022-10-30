@@ -1,0 +1,61 @@
+/*-----Global-----*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    border: none;
+    background: transparent;
+    display: block;
+}
+
+body {
+    background: #001A35;
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    padding: 0 15px;
+    /*щоб сильно все не розлазилось з планшета/мобільного*/
+    max-width: 400px;
+    margin: 0 auto;
+    /*щоб сильно все не розлазилось з планшета/мобільного End*/
+}
+.wrapper{
+    overflow: hidden;
+}
+/*-----Global End-----*/
+
+/*-----Header-----*/
+.header{
+    padding-top: 92px;
+    padding-bottom: 62px;
+}
+.header__title {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 115%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header__img{
+    width:110%;
+    margin-left: -6%;
+    margin-top: -240px;
+    margin-bottom: -300px;
+}
+
+/*-----Header End-----*/
+
+/*-----Section-----*/
+/*-----Section End-----*/
