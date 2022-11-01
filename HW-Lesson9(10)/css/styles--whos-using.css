@@ -1,10 +1,12 @@
-/*Gloal*/
+/*-----Gloal-----*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*Global End*/
+/*-----Global End-----*/
+
+
 
 .main--wrapper {
     display: block;
@@ -54,7 +56,6 @@
     /* logo's-gray-bg */
     background: #E6E6E6;
     border-radius: 8px;
-    
 }
 
 .logosGroup__logo:hover{
@@ -66,7 +67,6 @@
 
 .logosGroup__logo:nth-child(1n+4)+ .logosGroup__logo:hover {
     background: orange;
-   /* transition: 0.3s;*/
 }
 
 #facebook{

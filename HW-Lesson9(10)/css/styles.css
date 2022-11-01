@@ -1,4 +1,4 @@
-/*Global*/
+/*-----Global-----*/
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-    position: static;
+    /*position: static;*/
     padding: 0 120px 90px 120px;
     background: #F4F4F4;
 }
@@ -40,33 +40,34 @@ body{
     white-space: nowrap;
     background-color: rgb(182, 180, 180);
 }
-/*Global End*/
+/*-----Global End-----*/
 
 
 
 
 
-/*Header*/
+/*-----Header-----*/
 /*!!!
 0 Не врапиться ліва і права сторони хедеру (при зменшенні лого не переноситься в рядок)?
 1 Як правильно зафіксити хедер і зберегти відступ з наступним блоком (паддінг і марджин хедеру пропадає)?
-2 Чому додатково необхідно задавати падінг правий для хедеру, якщо він вже встановлений на рівні головної 
-огортки враперу. Без нього лого не вирівнюється по правому краю?
-3 Чому додатково необхідно задавати фон, якщо він вже встановлений на рівні головної 
+2 Чому додатково необхідно задавати фон, якщо він вже встановлений на рівні головної 
 огортки враперу. Без нього блок контенту залазить і перекриває хедер зверху?
+3 Чому при position: fixed; пропадає розмір блоку по всій ширині?
+4 як задати привязку що основний контент починається після закріпленного хедера?
 */
 
 header {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 70px;
     padding: 10px 0;
 
-    /*position: fixed;
-    min-width: 100%;
+    position: fixed;
+    z-index: +1;
     background: #F4F4F4;
-    padding-right: 120px;*/
+    /*width: 100vw;*/
+    /*margin-bottom: 180px;*/
+
 }
 
 .header__left {
@@ -115,6 +116,8 @@ header {
     justify-content: end;
     align-items: center;
     flex-wrap: wrap;
+    /*position: relative;*/
+    /*transform: translate(100%, 0);*/
 }
 
 .header__logo {
@@ -130,7 +133,7 @@ header {
     border-color: transparent;
 
     /*transform: translate(200%, 0%);  */
-    /*position:absolute;
+    /*position:relative;
     top:0%;
     left: 100%;
     transform: translate(-200%, 0%);*/
@@ -146,22 +149,22 @@ header {
 .header__logo:active {
     box-shadow: 1px 1px darkblue;
 }
-
-/*Header End*/
-
+/*-----Header End-----*/
 
 
 
 
 
+/*-----Main-----*/
 .main--wrapper {
     display: flex;
-    background-color: transparent;
+    position:static;
+    /*padding-top:50px;*/
 }
 
 .menu {
     position: sticky;
-    top: 30px;
+    top: 180px;
 
     padding-left: 10px;
     padding-right: 8px;
@@ -280,7 +283,7 @@ header {
 }*/
 
 /*
-!!! Чому нтх чайлд 3?
+!!! Чому nth-child(3)?
 */
 .main__chapter--text:nth-child(3)>.addText_underline::after {
     content: 'their own section';
@@ -293,3 +296,4 @@ header {
 .main__chapter--text:nth-child(7)>.addText_hightlight::after {
     content: 'name';
 }
+/*-----Main End-----*/
