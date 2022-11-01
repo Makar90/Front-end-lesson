@@ -61,7 +61,10 @@
 .logosGroup__logo:hover{
     background: #1A1A1A;
     transition: 0.3s;
+    
+    
     transform: rotateX(360deg);
+    /*transform: scaleY(-1);*/
     transition: transform 1.5s, background-color 0.3s;
 }
 

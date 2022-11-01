@@ -7,16 +7,20 @@
 
 .wrapper {
     /*position: static;*/
-    padding: 0 120px 90px 120px;
+    padding: 150px 120px 90px 120px;
     background: #F4F4F4;
 }
 
-body{
+body {
     background: #F4F4F4;
 }
 
-.menu__listItem {
+nav {
     list-style: none;
+}
+
+.logoUrl {
+    display: block;
 }
 
 .menu__item--link {
@@ -40,47 +44,38 @@ body{
     white-space: nowrap;
     background-color: rgb(182, 180, 180);
 }
+
 /*-----Global End-----*/
 
 
 
-
-
-/*-----Header-----*/
-/*!!!
-0 Не врапиться ліва і права сторони хедеру (при зменшенні лого не переноситься в рядок)?
-1 Як правильно зафіксити хедер і зберегти відступ з наступним блоком (паддінг і марджин хедеру пропадає)?
-2 Чому додатково необхідно задавати фон, якщо він вже встановлений на рівні головної 
-огортки враперу. Без нього блок контенту залазить і перекриває хедер зверху?
-3 Чому при position: fixed; пропадає розмір блоку по всій ширині?
-4 як задати привязку що основний контент починається після закріпленного хедера?
-*/
-
 header {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 70px;
-    padding: 10px 0;
-
-    /*position: fixed;*/
-    /*z-index: +1;*/
-    /*background: #F4F4F4;*/
-    /*width: 100%;*/
-    /*margin-bottom: 180px;*/
-
+    padding: 0 120px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: +1;
+    background: #F4F4F4;
 }
 
-.header__left {
+.container {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerLeftArea {
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    width: 50%;
 }
 
-.header__lang {
+.headerLeftArea_lang {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     font-family: 'Tourney', cursive;
     font-style: normal;
@@ -93,7 +88,7 @@ header {
     color: #000000;
 }
 
-.header__menu {
+.headerLeftArea_menu {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -110,20 +105,14 @@ header {
     color: #000000;
 }
 
-.hendler__right {
-    width: 50%;
+.headerRightArea {
     display: flex;
-    justify-content: end;
     align-items: center;
     flex-wrap: wrap;
-    /*position: relative;*/
-    /*transform: translate(100%, 0);*/
+    gap:50px;    
 }
 
 .header__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 16px 0;
     color: #1A1A1A;
 
@@ -132,11 +121,10 @@ header {
     border-radius: 8px;
     border-color: transparent;
 
-    /*transform: translate(200%, 0%);  */
-    /*position:relative;
-    top:0%;
-    left: 100%;
-    transform: translate(-200%, 0%);*/
+    /*position:absolute;
+    top:0;
+    right:0;
+    transform: translate(-120px, 0%);*/
 }
 
 .header__logo:hover {
@@ -153,24 +141,21 @@ header {
 
 
 
-
-
 /*-----Main-----*/
 .main--wrapper {
     display: flex;
-    position:static;
+    position: static;
 }
 
 .menu {
     position: sticky;
-    top: 180px;
-
+    top: 100px;
     padding-left: 10px;
     padding-right: 8px;
     margin-right: 25px;
 }
 
-.menu__item {
+.menu> li {
     font-family: 'Francois One', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -187,21 +172,19 @@ header {
     white-space: nowrap;
 }
 
-.menu__item:last-child {
+.menu> li:last-child {
     margin-bottom: 0;
 }
 
-/*
-!!!Main зробив релятів; в мейні лого  з фіксед; але лого не пориціонується відностно мейн?
-*/
-.main{
-    position:relative;
+
+.main {
+    position: relative;
 }
+
 .backgroundLogo {
     position: fixed;
     left: 56%;
-    /*transform: translate(20%,0); */
-    /*z-index: -1;*/
+    top: 16%;
 }
 
 .main__chapter {
@@ -295,4 +278,5 @@ header {
 .main__chapter--text:nth-child(7)>.addText_hightlight::after {
     content: 'name';
 }
+
 /*-----Main End-----*/
