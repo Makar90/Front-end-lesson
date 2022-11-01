@@ -62,10 +62,10 @@ header {
     margin-bottom: 70px;
     padding: 10px 0;
 
-    position: fixed;
-    z-index: +1;
-    background: #F4F4F4;
-    /*width: 100vw;*/
+    /*position: fixed;*/
+    /*z-index: +1;*/
+    /*background: #F4F4F4;*/
+    /*width: 100%;*/
     /*margin-bottom: 180px;*/
 
 }
@@ -159,7 +159,6 @@ header {
 .main--wrapper {
     display: flex;
     position:static;
-    /*padding-top:50px;*/
 }
 
 .menu {
