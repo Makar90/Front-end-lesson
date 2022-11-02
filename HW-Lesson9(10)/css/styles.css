@@ -140,6 +140,7 @@ header {
 .main--wrapper {
     display: flex;
     position: static;
+    margin-bottom:80px;
 }
 
 .menu {
