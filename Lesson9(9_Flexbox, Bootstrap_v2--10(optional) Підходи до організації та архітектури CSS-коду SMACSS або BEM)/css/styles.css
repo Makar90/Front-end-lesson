@@ -41,12 +41,14 @@ body{
         order:1;
     }
     .text{
+        width:600px;
         order:3;
     }
     .image{
         order:2;
     }
 }
+
 /*Screen less than 768px*/ 
 /*Mobile version*/
 @media (max-width:768px) {
@@ -54,7 +56,7 @@ body{
         order:2;
     }
     .text{
-        width:600px;
+       
         order:3;
     }
     .image{
