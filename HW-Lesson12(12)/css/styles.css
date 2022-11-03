@@ -10,8 +10,14 @@
 
 
 
+
+
 section {
     padding: 120px 135px 0;
+}
+
+section:last-child{
+    padding-bottom: 120px;
 }
 
 h2 {
@@ -46,7 +52,7 @@ h2 {
 }
 
 .image_item:hover{
-    box-shadow: 4px 4px blueviolet;
+    box-shadow: 4px 4px gold;
 }
 
 .image_item--blur{
