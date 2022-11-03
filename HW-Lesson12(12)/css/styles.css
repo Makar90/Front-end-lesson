@@ -206,47 +206,102 @@ h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-img{
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: -1;
-}*/
-
-/*
-.image_item{
-    grid-area: image_item;  
+/*-----Images for Architectural Photography-----*/
+.architectural_photography .image_item:nth-child(1) {
+    background-image: url('../img/architectural_photography_1.jpg');
 }
 
-.image_item--wide{
-    grid-area: image_item--wide;
-}*/
-
-/*
-#img3 {
-    grid-area: img3;
+.architectural_photography .image_item:nth-child(2) {
+    background-image: url('../img/architectural_photography_2.jpg');
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 770px;
+    height: 370px;
 }
 
-#img4 {
-    grid-area: img4;
+.architectural_photography .image_item:nth-child(3) {
+    background-image: url('../img/architectural_photography_3.jpg');
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
 }
 
-#img5 {
-    grid-area: img5;
+.architectural_photography .image_item:nth-child(4) {
+    background-image: url('../img/architectural_photography_4.jpg');
 }
 
-#img6 {
-    grid-area: img6;
-}*/
+.architectural_photography .image_item:nth-child(5) {
+    background-image: url('../img/architectural_photography_5.jpg');
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+}
+
+.architectural_photography .image_item:nth-child(6) {
+    background-image: url('../img/architectural_photography_6.jpg');
+}
+/*-----Images for Architectural Photography End-----*/
+
+
+
+
+/*-----Images for Portrait and Fashion Photography-----*/
+.portrait_and_fashion_photography .image_item:nth-child(1) {
+    background-image: url('../img/portrait_and_fashion_photography_1.jpg');
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(2) {
+    background-image: url('../img/portrait_and_fashion_photography_2.jpg');
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 770px;
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(3) {
+    background-image: url('../img/portrait_and_fashion_photography_3.jpg');
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(4) {
+    background-image: url('../img/portrait_and_fashion_photography_4.jpg');
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(5) {
+    background-image: url('../img/portrait_and_fashion_photography_5.jpg');
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 770px;
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(6) {
+    background-image: url('../img/portrait_and_fashion_photography_6.jpg');
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 770px;
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(7) {
+    background-image: url('../img/portrait_and_fashion_photography_7.jpg');
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(8) {
+    background-image: url('../img/portrait_and_fashion_photography_8.jpg');
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 770px;
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(9) {
+    background-image: url('../img/portrait_and_fashion_photography_9.jpg');
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 770px;
+}
+
+.portrait_and_fashion_photography .image_item:nth-child(10) {
+    background-image: url('../img/portrait_and_fashion_photography_10.jpg');
+}
+/*-----Images for Portrait and Fashion Photography End-----*/
