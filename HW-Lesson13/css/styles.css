@@ -82,7 +82,7 @@ img {
 /*-----Hero-----*/
 .hero {
     min-height: 600px;
-    min-width: 320px;
+    min-width: 175px; /*320px;*/
     margin-bottom: 90px;
     padding-top: 100px;
     background-image: url('../img/hero.jpg');
