@@ -1,0 +1,16 @@
+
+.contact-page{
+    padding-top:130px;
+
+    &__container{
+        display:flex;
+    }
+
+    &__subcontainer-left{
+        width:60%;
+    }
+    
+    &__subcontainer-right{
+        width:40%;
+    }
+}
