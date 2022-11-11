@@ -6,11 +6,15 @@
         display:flex;
     }
 
+    &__contact-page__container{
+
+    }
     &__subcontainer-left{
-        width:60%;
+        width:50%;
+        padding-bottom: 120px;
     }
     
     &__subcontainer-right{
-        width:40%;
+        width:50%;
     }
 }

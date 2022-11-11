@@ -1,9 +1,10 @@
 body {
-    font-family: sans-serif;
+    font-family: $sub-fonts;
+    height: 100vh;
 }
 
 .container {
-    max-width: 1179px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -11,4 +12,39 @@ body {
 .logo {
     max-width: 134px;
     height: 11px;
+}
+
+.hover--link--animation {
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        color: $color-orange;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap:8px;
+    padding: 8px 34px;
+    width: 160px;
+    height: 45px;
+    /* Grey 700 */
+    background: $color-button;
+
+    &__title {
+        font-family: $sub-fonts;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 166%;
+        /* or 27px */
+        letter-spacing: 0.1em;
+        /* Base / White */
+        color: $color-white;
+    }
+
+    &__img {}
 }

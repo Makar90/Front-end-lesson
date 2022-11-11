@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display&display=swap');
+
+$main-fonts: 'Red Hat Display', sans-serif;
+$sub-fonts: 'Lato', sans-serif;
+
+.h1 {
+    font-family: $main-fonts;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: $color-black;
+
+    @media (max-width: $tablet) {
+        font-size: 33px;
+        line-height: 50px;
+    }
+}
+
+.h3 {
+    /* Heading / H3 */
+    font-family: $main-fonts;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 166%;
+    /* or 38px */
+    letter-spacing: 0.1em;
+    /* Grey 700 */
+    color: $color-gray;
+}
+
+.h4 {
+    font-family: $sub-fonts;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: $color-gray;
+}
+
+.h6 {
+    font-family: $sub-fonts;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: $color-black;
+
+    @media (max-width: $tablet) {
+        /*dosent changes*/
+    }
+}
+
+.h9 {
+    font-family: $sub-fonts;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 166%;
+    /* or 20px */
+    letter-spacing: 0.1em;
+    color: $color-black;
+
+    @media (max-width: $tablet) {
+        /*dosent changes*/
+    }
+}
+
+.h7 {
+    font-family: $sub-fonts;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 166%;
+    /* or 27px */
+    letter-spacing: 0.1em;
+    /* Base / White */
+    color: $color-white;
+
+    @media (max-width:$tablet) {
+        //dosent changes
+    }
+}

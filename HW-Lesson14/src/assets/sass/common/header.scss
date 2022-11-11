@@ -1,6 +1,10 @@
 // & == .header
 .header {
-    padding-top: 96px;
+    padding: 96px 160px;
+
+    @media (max-width:$tablet) {
+        padding: 26px 39px 73px 18px;        
+    }
 
     &__container {
         display: flex;
@@ -51,8 +55,8 @@
             border-bottom: 1px solid $color-black;
         }
 
-        &--active {
+       /* &--active {
             border-bottom: 1px solid $color-black;
-        }
+        }*/
     }
 }
