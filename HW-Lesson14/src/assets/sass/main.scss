@@ -11,11 +11,15 @@
 
 // Common section
 @import './common/header.scss';
+@import './common/main-section.scss';
 @import './common/footer.scss';
-@import './pages/about.scss';
+@import './common/form.scss';
 // Common section End
 
 // Pages Style
 @import './pages/home.scss';
+@import './pages/about.scss';
 @import './pages/contact.scss';
+@import './pages/works.scss';
+@import './pages/works/ai-fashion-platform.scss';
 // Pages Style End

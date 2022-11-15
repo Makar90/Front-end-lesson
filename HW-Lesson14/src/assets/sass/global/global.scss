@@ -1,12 +1,17 @@
 body {
     font-family: $sub-fonts;
-    height: 100vh;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 16px;
+    //padding: 0 16px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -22,29 +27,24 @@ body {
     &:hover {
         transform: scale(1.1);
         color: $color-orange;
+
+        @media (max-width:$tablet) {
+            transform: none;
+        }
     }
 }
 
-.button {
+.button--arrow {
     display: flex;
     align-items: center;
-    gap:8px;
-    padding: 8px 34px;
+    gap: 8px;
+    padding: 8px 22px 8px 34px;
     width: 160px;
     height: 45px;
     /* Grey 700 */
     background: $color-button;
 
-    &__title {
-        font-family: $sub-fonts;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 166%;
-        /* or 27px */
-        letter-spacing: 0.1em;
-        /* Base / White */
-        color: $color-white;
+    &::after {
+        content: "→";
     }
-
-    &__img {}
 }

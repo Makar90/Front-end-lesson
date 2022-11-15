@@ -18,10 +18,11 @@
             <div class="container header__container">
                 <img class="logo" src="./img/Logo.svg" alt="logo">
                 <nav class="header__nav">
+                    <input id="gam" class="header__nav-input" type="checkbox">
                     <label class="header__nav-label" for="gam">
                         <div class="header__nav-icon"></div>
                     </label>
-                    <input id="gam" class="header__nav-input" type="checkbox">
+
                     <ul class="header__nav-row">
                         <li class="header__nav-item header__nav-item--active">
                             <a class="header__nav-link" href="/">Home</a>
@@ -39,22 +40,63 @@
                             <a class="header__nav-link" href="./pages/contact.html">Contact</a>
                         </li>
                     </ul>
+
                 </nav>
             </div>
         </header>
 
-        <main class="home-page">
+        <main class="main home-page">
             <section>
                 <div class="container">
                     <h1>Home page</h1>
-                </div>
 
+
+                    <button class="button--arrow about__button">
+                        Resume
+                    </button>
+                    <div class="modal">
+                        <h2>Lorem, ipsum.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolor!</p>
+                        <form class="form" action="" netlify>
+                            <div class="form__fields">
+                                <span class="form__span">Name*</span>
+                                <input class="form__input" type="text" placeholder="Walter Moss" required>
+                            </div>
+
+                            <div class="form__fields">
+                                <span class="form__span">E-mail*</span>
+                                <input class="form__input" type="email" placeholder="Info@manifest.comt" required>
+                            </div>
+
+                            <div class="form__fields">
+                                <span class="form__span">Reason for contact</span>
+                                <select name="" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+
+                            <div class="form__fields buttonn">
+                                <span class="form__span">Message</span>
+                                <input class="form__input" type="text" placeholder="Hi there ...">
+                            </div>
+
+
+                            <button type="submit">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </section>
             <section></section>
             <section></section>
             <section></section>
             <section></section>
             <section></section>
+
+
         </main>
 
         <footer class="footer">

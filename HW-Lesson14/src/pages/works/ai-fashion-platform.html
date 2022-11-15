@@ -1,80 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <!--Шлях до css це відносний шлях не залежить ввід папки-->
-    <link rel="stylesheet" href="@@webRoot/bundle.min.css">
+    <title>AI Fashion Platform</title>
 </head>
-
 <body>
-
     <div class="wrapper">
 
         <header class="header">
             <div class="container header__container">
-                <img class="logo" src="../img/Logo.svg" alt="logo">
+                <img class="logo" src="../../img/Logo.svg" alt="logo">
                 <nav class="header__nav">
                     <input id="gam" class="header__nav-input" type="checkbox">
                     <label class="header__nav-label" for="gam">
                         <div class="header__nav-icon"></div>
                     </label>
-                    
+
                     <ul class="header__nav-row">
                         <li class="header__nav-item">
                             <a class="header__nav-link" href="/">Home</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link header__nav-item--active" href="../pages/about.html">About</a>
+                            <a class="header__nav-link" href="../../pages/about.html">About</a>
+                        </li>
+                        <li class="header__nav-item header__nav-item--active">
+                            <a class="header__nav-link" href="../../pages/works.html">Works</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="../pages/works.html">Works</a>
+                            <a class="header__nav-link" href="../../pages/blog.html">Blog</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="../pages/blog.html">Blog</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="../pages/contact.html">Contact</a>
+                            <a class="header__nav-link" href="../../pages/contact.html">Contact</a>
                         </li>
                     </ul>
-                
+
                 </nav>
             </div>
         </header>
 
-        <main class="main about">
-            <section class="container about__container">
-                <div class="about__left-container">
-                    <h1 class="h1 about__title">About</h1>
-                    <h2 class="h3 about__title-title">
-                        I’m Manifest                     
-                    </h2>
-                    <h2 class="h3 about__title-title">
-                        Full-time UI/UX designer
-                    </h2>
-                    <h2 class="h3 about__title-title">
-                        Head of Design at VeronaLabs.com
-                    </h2>
-                    <img class="about__img" src="../img/about/about-1.jpg" alt="woomen portret">
-                </div>
-                <div class="about__right-container">
-                    <p class="h4 about__text">I was born in January 1990. After getting my Degree in computer science in
-                        2002, I persuaded my
-                        higher study in Human Computer Interaction Design. I got my first job as Graphic Designer in the
-                        year 2008. After getting experience in graphic designing for a year, I moved to UI-UX Designing.
-                     </p>
-                     <p class="h4 about__text"> 
-                        In 2010, I decided to work as a Freelance Web, UI-UX & Mobile Interface Designer. I find myself
-                        still in the learning phase and have strong desire to achieve as many skills as I can.
-                    </p>
-                    <button class="h7 about__button button--arrow ">
-
-                    </button>
-                </div>
+        <main class="main ai-fashion-platform__main-container">
+            <section class="container ai-fashion-platform__container">
+                <p class="h-pre-title ai-fashion-platform__pre-title">CASE STUDY</p>
+                <h1 class="h1 ai-fashion-platform__title">AI Fashion Platform</h1>
+                <img class="ai-fashion-platform__image" src="../../img/works/ai-fashion-platform/ai-fashion-platform-01.jpg" alt="ai-fashion-platform-01">
+            <p>ddd</p>
             </section>
+           
         </main>
 
         <footer class="footer">
@@ -112,11 +85,5 @@
         </footer>
 
     </div>
-
-
-    <!--Обовязково додавати потрібно для JS -->
-    <script> var exports = {}; </script>
-    <script src="@@webRoot/js/index.js"></script>
 </body>
-
 </html>

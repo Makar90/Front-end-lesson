@@ -5,56 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Works</title>
     <!--Шлях до css це відносний шлях не залежить ввід папки-->
     <link rel="stylesheet" href="@@webRoot/bundle.min.css">
 </head>
 
 <body>
-   
+
     <div class="wrapper">
 
         <header class="header">
             <div class="container header__container">
                 <img class="logo" src="../img/Logo.svg" alt="logo">
                 <nav class="header__nav">
+                    <input id="gam" class="header__nav-input" type="checkbox">
                     <label class="header__nav-label" for="gam">
                         <div class="header__nav-icon"></div>
                     </label>
-                    <input id="gam" class="header__nav-input" type="checkbox">
+
                     <ul class="header__nav-row">
                         <li class="header__nav-item">
                             <a class="header__nav-link" href="/">Home</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="./about.html">About</a>
+                            <a class="header__nav-link" href="../pages/about.html">About</a>
+                        </li>
+                        <li class="header__nav-item header__nav-item--active">
+                            <a class="header__nav-link" href="../pages/works.html">Works</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link header__nav-item--active" href="./works.html">Works</a>
+                            <a class="header__nav-link" href="../pages/blog.html">Blog</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="./contact.html">Contact</a>
+                            <a class="header__nav-link" href="../pages/contact.html">Contact</a>
                         </li>
                     </ul>
+
                 </nav>
             </div>
         </header>
 
-        <main class="home-page">
-            <section>
-                <div class="container">
-                    <h1>Home page</h1>
+        <main class="main works__container">
+            <section class="container works__head-container">
+                <div class="works__sub-section-container-left">
+                    <h1 class="h1 works__head-title">
+                        Works
+                    </h1>
                 </div>
-
+                <div class="works__sub-section-container-right">
+                    <h2 class="h4 works__head-sub-title">
+                        Hello! I’m Manifest – a Freelance UI/UX Designer from Berlin, Germany.
+                    </h2>
+                </div>
             </section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
+            <section class="container works__article-container">
+                <div class="works__sub-section-container-left">
+                    <h3 class="h3 works__article-title">
+                        Car Sharing App
+                    </h3>
+                    <div class="works__article-title-line">
+
+                    </div>
+                    <h4 class="h6 works__article-sub-title">
+                        Product Design
+                    </h4>
+                    <p class="works__article-date">
+                        <time datetime="2020-01-31 00:01">
+                            2020
+                        </time>
+                    </p>
+                    <button class="h7 button--arrow works__article-button">
+                    </button>
+                </div>
+                <div class="works__sub-section-container-right">
+                    <img class="works__article-image" src="../img/works/works-01.jpg" alt="img article 1">
+                </div>
+            </section>
+            <section class="container works__article-container">
+                <div class="works__sub-section-container-left">
+                    <h3 class="h3 works__article-title">
+                        AI Fashion Platform
+                    </h3>
+                    <div class="works__article-title-line">
+
+                    </div>
+                    <h4 class="h6 works__article-sub-title">
+                        User Centered Website Redesign
+                    </h4>
+                    <p class="works__article-date">
+                        <time datetime="2019-01-31 00:01">
+                            2019
+                        </time>
+                    </p>
+                    <a href="./test.html">
+                        <button class="h7 works__article-button button--arrow hover--link--animation">
+                        </button>
+                    </a>
+                </div>
+                <div class="works__sub-section-container-right">
+                    <img class="works__article-image" src="../img/works/works-02.jpg" alt="img article 1">
+                </div>
+            </section>
+            <section class="container works__article-container">
+                <div class="works__sub-section-container-left">
+                    <h3 class="h3 works__article-title">
+                        Redesigning DropBox
+                    </h3>
+                    <div class="works__article-title-line">
+
+                    </div>
+                    <h4 class="h6 works__article-sub-title">
+                        Product Design
+                    </h4>
+                    <p class="works__article-date">
+                        <time datetime="2018-01-31 00:01">
+                            2018
+                        </time>
+                    </p>
+                    <button class="h7 works__article-button button--arrow">
+
+                    </button>
+                </div>
+                <div class="works__sub-section-container-right">
+                    <img class="works__article-image" src="../img/works/works-03.jpg" alt="img article 1">
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -65,18 +140,34 @@
                     <a class="h6 footer__contact" href="email:tanya.hill@example.com">tanya.hill@example.com</a>
                 </div>
 
-                <div class="footer__links">
-                    <li class="footer__links--item"><a class="h6 footer__links--link" href="#">Facebook</a></li>
-                    <li class="footer__links--item"><a class="h6 footer__links--link" href="#">Instagram</a></li>
-                    <li class="footer__links--item"><a class="h6 footer__links--link" href="#">Dribbble</a></li>
-                    <li class="footer__links--item"><a class="h6 footer__links--link" href="#">Linkedin</a></li>
-                </div>
-                <p class="h9 footer_copyright">© Copyright Manifest Theme. Allrights reserved</p>
+                <ul class="footer__social--row">
+                    <li class="footer__social--item">
+                        <a class="h6 hover--link--animation footer__link" href="#">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="footer__social--item">
+                        <a class="h6 hover--link--animation footer__link" href="#">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="footer__social--item">
+                        <a class="h6 hover--link--animation footer__link" href="#">
+                            Dribbble
+                        </a>
+                    </li>
+                    <li class="footer__social--item">
+                        <a class="h6 hover--link--animation footer__link" href="#">
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+                <p class="h9 footer__description">© Copyright Igor Theme. 2022</p>
             </div>
         </footer>
 
     </div>
-    
+
 
     <!--Обовязково додавати потрібно для JS -->
     <script> var exports = {}; </script>
