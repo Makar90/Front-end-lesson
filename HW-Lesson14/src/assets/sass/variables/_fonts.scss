@@ -35,7 +35,7 @@ $sub-fonts: 'Lato', sans-serif;
     font-size: 19px;
     line-height: 32px;
     letter-spacing: 0.05em;
-    color: $color-black;
+    color: $color-gray700;
 }
 
 .h6 {
@@ -85,6 +85,12 @@ $sub-fonts: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    /* identical to box height, or 24px */
     letter-spacing: 0.5em;
     color: $color-black;
+
+    @media (max-width:$tablet) {
+        font-family: $main-fonts;
+        line-height: 21px;
+    }
 }

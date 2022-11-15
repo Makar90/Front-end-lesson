@@ -1,5 +1,122 @@
-.ai-fashion-platform{
-    &__pre-title{
-        margin-top: 1000px;
+.ai-fashion-platform {
+    &__container {
+        padding: 0 0 128px 0;
+
+        @media (max-width:$tablet) {
+            padding: 0 0 64px 0;
+        }
+
+        &:nth-child(1) {
+            padding: 0 0 130px 0;
+
+            @media (max-width:$tablet) {
+                padding: 0 0 48px 0;
+            }
+        }
+
+        &:nth-child(2) {
+            display: flex;
+            gap: 224px;
+            padding: 0 0 135px 0;
+
+            @media (max-width:$tablet) {
+                flex-direction: column;
+                gap: 64px;
+                padding: 0 0 71px 0;
+            }
+        }
+
+        &:last-child {
+            padding: 0;
+        }
     }
+
+    &__pre-title {
+        margin: 0 0 48px 0;
+
+        @media (max-width:$tablet) {
+            margin: 0 0 39px 0;
+        }
+    }
+
+    &__title {
+        margin: 0 0 64px 0;
+
+        @media (max-width:$tablet) {
+            margin: 0 0 52px 0;
+        }
+    }
+
+    &__sub-title {
+        margin: 0 0 40px 0;
+
+        @media (max-width:$tablet) {
+            margin: 0 0 32px 0;
+        }
+    }
+
+    &__image {
+        margin: 0 0 50px 0;
+
+        @media (max-width:$tablet) {
+            margin: 0 0 48px 0;
+        }
+    }
+
+    &__text {
+        margin: 0 0 20px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+
+
+    // castomize first container content
+    &__container:first-child &__image {
+        margin: 0;
+    }
+
+    &__container:first-child &__image {
+        @media (max-width:$tablet) {
+            background-image: url('../../img/works/ai-fashion-platform/ai-fashion-platform-adaptive-01.jpg');            
+        }
+    }
+
+    // castomize first container content End
+
+    // castomize second container content
+    &__sub-conteiner-left &__sub-title {
+
+        @media (max-width:$tablet) {
+            margin: 0 0 16px 0;
+        }
+    }
+
+    &__sub-conteiner-left &__text {
+        max-width: 544px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        @media (max-width:$tablet) {
+            max-width: 100%;
+        }
+    }
+
+    &__sub-conteiner-right &__sub-title {
+        margin: 0 0 -10px 0;
+    }
+
+    &__sub-conteiner-right &__text {
+        margin: 0 0 46px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    // castomize second container content end
 }
