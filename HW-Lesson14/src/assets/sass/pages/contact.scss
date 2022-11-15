@@ -1,21 +1,19 @@
+.contact-page {
+    padding-top: 130px;
 
-.contact-page{
-    padding-top:130px;
-
-    &__container{
-        display:flex;
+    &__container {
+        display: flex;
     }
 
-    &__contact-page__container{
+    &__contact-page__container {}
 
-    }
-    &__subcontainer-left{
-        width:50%;
+    &__subcontainer-left {
+        width: 50%;
         padding-bottom: 120px;
     }
-    
-    &__subcontainer-right{
-        width:50%;
+
+    &__subcontainer-right {
+        width: 50%;
     }
 }
 
