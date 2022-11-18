@@ -1,3 +1,43 @@
-.form{
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 28px 22px;
     
+
+    &__title {
+        /* Heading / H5 */
+        line-height: 166%;
+        /* or 27px */
+        letter-spacing: 0.05em;
+        /* Grey 700 */
+        color: $color-gray700;
+        display: block;
+    }
+
+    &__input {
+        font-size: 12px;
+        line-height: 166%;
+        /* or 20px */
+        letter-spacing: 0.1em;
+        color: $color-gray500;
+        padding: 9px 9px;
+        display: block;
+        width: 100%;
+        border:none;
+        border-bottom: 1px solid $color-black;
+        cursor:pointer;
+
+        &:focus{
+            border-bottom: 2px solid $color-orange; 
+        }
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 166%;
+            /* or 20px */
+            letter-spacing: 0.1em;
+            color: $color-gray500;
+        }
+    }
 }

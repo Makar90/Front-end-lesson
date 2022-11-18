@@ -52,50 +52,54 @@
                     <h1>Home page</h1>
 
 
-                    <button class="button--arrow about__button">
+                    <button id="btn1" class="button button--arrow ">
                         Resume
                     </button>
-                    <div class="modal">
-                        <h2>Lorem, ipsum.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolor!</p>
-                        <form class="form" action="" netlify>
-                            <div class="form__fields">
-                                <span class="form__span">Name*</span>
-                                <input class="form__input" type="text" placeholder="Walter Moss" required>
+
+                    <div class="home-page__modal-container">
+                        <div class="modal home-page__modal">
+                            <div class="home-page__modal-close">
+                                X
                             </div>
-
-                            <div class="form__fields">
-                                <span class="form__span">E-mail*</span>
-                                <input class="form__input" type="email" placeholder="Info@manifest.comt" required>
-                            </div>
-
-                            <div class="form__fields">
-                                <span class="form__span">Reason for contact</span>
-                                <select name="" id="">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-
-                            <div class="form__fields buttonn">
-                                <span class="form__span">Message</span>
-                                <input class="form__input" type="text" placeholder="Hi there ...">
-                            </div>
-
-
-                            <button type="submit">
-                                Send
-                            </button>
-                        </form>
+                            <h2 class="h1 home-page__modal-title">Lorem, ipsum.</h2>
+                            <p class="h4 home-page__modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Obcaecati, dolor!</p>
+                            <!------------------------------------------------------------------------------>
+                            <form class="form" action="" netlify>
+                                <div class="form__fields">
+                                    <span class="form__title">Name*</span>
+                                    <input class="form__input" type="text" placeholder="Walter Moss" required>
+                                </div>
+                                <!--**-->
+                                <div class="form__fields">
+                                    <span class="form__title">E-mail*</span>
+                                    <input class="form__input" type="email" placeholder="Info@manifest.comt" required>
+                                </div>
+                                <!--**-->
+                                <div class="form__fields">
+                                    <select class="form__input" name="" id="">
+                                        <option value="1">Reason for contact</option>
+                                        <option value="2">Ukraine</option>
+                                        <option value="3">USA</option>
+                                        <option value="4">Poland</option>
+                                        <option value="5">Litvania</option>
+                                    </select>
+                                </div>
+                                <!--**-->
+                                <div class="form__fields">
+                                    <span class="form__title">Message</span>
+                                    <input class="form__input" type="text" placeholder="Hi there ...">
+                                </div>
+                                <!--**-->
+                                <button class="button" type="submit">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
                     </div>
+
                 </div>
             </section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
 
 
         </main>

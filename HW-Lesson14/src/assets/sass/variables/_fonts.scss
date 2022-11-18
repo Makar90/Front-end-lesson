@@ -5,7 +5,6 @@ $sub-fonts: 'Lato', sans-serif;
 
 .h1 {
     font-family: $main-fonts;
-    font-weight: 400;
     font-size: 48px;
     line-height: 64px;
     letter-spacing: 0.05em;
@@ -20,7 +19,6 @@ $sub-fonts: 'Lato', sans-serif;
 .h3 {
     /* Heading / H3 */
     font-family: $main-fonts;
-    font-weight: 400;
     font-size: 23px;
     line-height: 166%;
     /* or 38px */
@@ -30,8 +28,6 @@ $sub-fonts: 'Lato', sans-serif;
 }
 
 .h4 {
-    font-family: $sub-fonts;
-    font-weight: 400;
     font-size: 19px;
     line-height: 32px;
     letter-spacing: 0.05em;
@@ -39,8 +35,6 @@ $sub-fonts: 'Lato', sans-serif;
 }
 
 .h6 {
-    font-family: $sub-fonts;
-    font-weight: 400;
     font-size: 16px;
     line-height: 166%;
     letter-spacing: 0.1em;
@@ -52,7 +46,6 @@ $sub-fonts: 'Lato', sans-serif;
 }
 
 .h7 {
-    font-family: $sub-fonts;
     font-weight: 700;
     font-size: 16px;
     line-height: 166%;
@@ -67,8 +60,6 @@ $sub-fonts: 'Lato', sans-serif;
 }
 
 .h9 {
-    font-family: $sub-fonts;
-    font-weight: 400;
     font-size: 12px;
     line-height: 166%;
     /* or 20px */
@@ -81,8 +72,6 @@ $sub-fonts: 'Lato', sans-serif;
 }
 
 .h-pre-title {
-    font-family: $sub-fonts;
-    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     /* identical to box height, or 24px */

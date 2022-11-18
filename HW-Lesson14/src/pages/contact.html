@@ -22,7 +22,7 @@
                     <label class="header__nav-label" for="gam">
                         <div class="header__nav-icon"></div>
                     </label>
-                    
+
                     <ul class="header__nav-row">
                         <li class="header__nav-item">
                             <a class="header__nav-link" href="/">Home</a>
@@ -40,63 +40,125 @@
                             <a class="header__nav-link" href="../pages/contact.html">Contact</a>
                         </li>
                     </ul>
-                
+
                 </nav>
             </div>
         </header>
 
         <main class="main contact-page">
-            <section>
-                <div class="container contact-page__container">
-                    <div class="contact-page__subcontainer-left">
-                        <h1>Contact Us</h1>
-                    </div>
-                    <div class="contact-page__subcontainer-right">
-                        <p>If you need our help with your user account, have questions about how to use the platform or
-                            are experiencing technical difficulties, please do not hesitate to contact us.</p>
-                    </div>
+            <section class="container contact-page__container">
+                <div class="contact-page__sub-container-left">
+                    <h1 class="h1 contact-page__title">
+                        Contact Us
+                    </h1>
+                </div>
+                <div class="contact-page__sub-container-right">
+                    <p class="h4 contact-page__text">
+                        If you need our help with your user account, have questions about how to use the platform or
+                        are experiencing technical difficulties, please do not hesitate to contact us.
+                    </p>
                 </div>
             </section>
-            <section>
-                <div class="container contact-page__container">
-                    <div class="contact-page__subcontainer-left">
-                        <h2>Contact information</h2>
-                        <div class="contact-page__phone">
-                            <img src="#" alt="phone">
-                            <p>+48 601 366 816</p>
-                        </div>
-                        <div class="contact-page__email">
-                            <img src="#" alt="email">
-                            <p>company@support.com</p>
-                        </div>
-                        <div class="contact-page__follows">
-                            <h2>Follow Us</h2>
-                            <div class="contact-page__followsImg">
-                                <img src="#" alt="facebook">
-                                <img src="#" alt="twitter">
-                                <img src="#" alt="linkedin">
-                                <img src="#" alt="hzlogo">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-page__subcontainer-right">
-                        <label for="name">Name*</label>
-                        <input type="text" id="name">
-                        <label for="email">Email*</label>
-                        <input type="text" id="email">
-                        <label for="reason">Reason for contact</label>
-                        <input type="text" id="reason">
-                        <label for="message">Message*</label>
-                        <input type="text" id="message">
-                        <button>Send --- </button>
+
+            <section class="container contact-page__container">
+                <div class="contact-page__sub-container-left">
+                    <h2 class="h3 contact-page__sub_title">
+                        Contact information
+                    </h2>
+                    <a class="h6 contact-page__contact-title" href="googlemaps">
+                        486 Rahi street, Berlin .98 Germany
+                    </a>
+                    <label for="tel" class="icon icon-telephone">
+                    <a id="tel" class="h6 contact-page__contact-title" href="tel:48601366816">
+                        +48 601 366 816
+                    </a>
+                </label>
+                    <label for="email" class="icon icon icon-email">
+                    <a id="email" class=" h6 contact-page__contact-title contact-page__contact-title--last" href="mailto:company@support.com">
+                        company@support.com
+                    </a>
+                </label>
+                    <h2 class="h3 contact-page__sub_title">
+                        Follow Us
+                    </h2>
+                    <div class="contact-page__follows-row">
+                        <a class="contact-page__contact-title icon icon-facebook" href="facebook">
+                        </a>
+                        <a class="contact-page__contact-title icon icon-twitter" href="twitter">
+                        </a>
+                        <a class="contact-page__contact-title icon icon-linkedin" href="linkedin">
+                        </a>
+                        <a class="contact-page__contact-title contact-page__contact-title--last icon icon-dribble"
+                            href="dribble">
+                        </a>
                     </div>
                 </div>
+                <div class="contact-page__sub-container-right">
+                    <div class="form contact-page__form">
+                        <div class="form__fields contact-page__form-fields">
+                            <span class="form__title contact-page__form--title">
+                                Name*
+                            </span>
+                            <input class="form__input contact-page__form--input" type="text" placeholder="Walter Moss"
+                                required>
+                        </div>
+                        <div class="form__fields contact-page__form-fields">
+                            <span class="form__title contact-page__form--title">
+                                Email*
+                            </span>
+                            <input class="form__input contact-page__form--input" type="email"
+                                placeholder="Info@manifest.com" required>
+                        </div>
+                        <select class="form__input contact-page__form--input" name="" id="">
+                            <option value="1">Reason for contact</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <div class="form__fields contact-page__form-fields">
+                            <span class="form__title contact-page__form--title">
+                                Message*
+                            </span>
+                            <input class="form__input contact-page__form--input" type="text" placeholder="Hi there ..."
+                                required>
+                        </div>
+                        <button class="h7 button button--arrow" type="submit">Send</button>
+                    </div>
+                </div>
+
             </section>
         </main>
 
-        <footer>
-            <div class="container">
-                <h2>Footer</h2>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__content">
+                    <h2 class="h1 footer__title">Need a project?</h2>
+                    <a class="h6 footer__contact" href="tel:2395550108">(239) 555-0108</a>
+                    <a class="h6 footer__contact" href="email:tanya.hill@example.com">tanya.hill@example.com</a>
+                </div>
+
+                <ul class="footer__social--row">
+                    <li class="footer__social--item">
+                        <a class="h6 hover--link--animation footer__link" href="#">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="footer__social--item">
+                        <a class="h6 hover--link--animation footer__link" href="#">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="footer__social--item">
+                        <a class="h6 hover--link--animation footer__link" href="#">
+                            Dribbble
+                        </a>
+                    </li>
+                    <li class="footer__social--item">
+                        <a class="h6 hover--link--animation footer__link" href="#">
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+                <p class="h9 footer__description">© Copyright Igor Theme. 2022</p>
             </div>
         </footer>
 

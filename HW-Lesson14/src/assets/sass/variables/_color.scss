@@ -1,9 +1,23 @@
 // Color 
 
+//SCSS variable
 $color-black: #000000;
 $color-footer: #F4F4F4;
-$color-gray700: Grey;  /*Grey 700 */
+/* Grey 500 */
+$color-gray500: #7B7B7B;
+/*Grey 700 */
+$color-gray700: #808080;  
 $color-gray300: #CCCCCC;
 $color-orange: orange;
 $color-white: #FFFFFF;
 $color-button:#565656;
+$color-red: red;
+$color-green:green;
+$color-modal-background: rgba(121, 116, 116, 0.5);
+$color-modal-shadow: rgb(255, 215, 0, 1);
+
+
+//CSS variable
+:root{
+    --color-blue:blue;
+}

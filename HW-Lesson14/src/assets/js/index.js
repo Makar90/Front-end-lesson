@@ -1,1 +1,16 @@
-console.log("test");
+
+console.log(document.querySelector ('#btn1'));
+
+document.querySelector ('#btn1').onclick = () => {
+    console.log(document.querySelector ('#btn1'));
+}
+
+document.querySelector ('#btn1').onclick = () => {
+    document.querySelector ('.home-page__modal-container').classList.add('is-visible');
+}
+
+document.querySelector ('.home-page__modal-close').onclick = () => {
+    document.querySelector ('.home-page__modal-container').classList.remove('is-visible');
+}
+
+

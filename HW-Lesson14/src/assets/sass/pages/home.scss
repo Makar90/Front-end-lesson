@@ -1,5 +1,59 @@
-.home {
-    background-color: blue;
-    position: relative;
+.home-page {
+    &__modal-container{
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: $color-modal-background;
+        width:100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //display:none;
+        visibility: hidden;
+    }
 
+
+    &__modal {
+        position: relative;
+        max-width: 500px;
+        padding: 16px;
+        border-radius: 18px;
+        border: 1px solid $color-orange;
+        background-color: $color-white;
+        box-shadow: 10px 10px 200px 10px $color-modal-shadow;
+        //transition: all 0.8s;
+        //transform: scale(0);
+        opacity:0;
+    
+    }
+
+    .is-visible{
+        //display:flex;
+        visibility: visible;
+
+        .home-page__modal{
+            transition: all 1.2s;
+            //transform: scale(1);
+            opacity: 1;
+
+        }
+    }
+
+    &__modal-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-weight: 700;
+        padding: 3px 5px;
+        border: 1px solid $color-gray700;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $color-orange;
+            //background-color: $color-gray500;
+            color: $color-red;
+        }
+    }
 }

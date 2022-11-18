@@ -1,5 +1,6 @@
 body {
     font-family: $sub-fonts;
+    font-weight: 400;
 }
 
 .container {
@@ -34,17 +35,60 @@ body {
     }
 }
 
-.button--arrow {
+.button {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 8px;
-    padding: 8px 22px 8px 34px;
+    padding: 8px 22px 8px 22px;
     width: 160px;
     height: 45px;
     /* Grey 700 */
     background: $color-button;
+    transition: background-color 0.4s;
 
-    &::after {
-        content: "→";
+    &:hover{
+        background-color: $color-gray500;
     }
+
+    &--arrow::after {
+        content: "→";
+    }    
+}
+
+.icon{
+    display: block;
+    width:19px;
+    height:16px;
+    padding: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &:hover{
+        transform: scale(1.4);
+        transition: 0.3s;
+    }
+    &-facebook{
+        background-image: url('./img/contact/facebook.svg'); 
+    }
+    &-twitter{
+        background-image: url('./img/contact/twitter.svg'); 
+    }
+    &-linkedin{
+        background-image: url('./img/contact/linkeid.svg'); 
+    }
+    &-dribble{
+        background-image: url('./img/contact/dribble.svg'); 
+    }
+    &-telephone{
+        background-image: url('./img/contact/Tel.svg'); 
+    }
+    &-email{
+        background-image: url('./img/contact/Email.svg'); 
+    }
+    /*&::before{
+        content: '-------';
+        color:transparent;
+        background-image: url('./img/contact/facebook.svg');   
+    }*/
 }
