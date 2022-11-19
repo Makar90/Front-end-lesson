@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    color: white;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.header__text {
+    max-width: 380px;
+    margin: 16px 0 24px;
+}
+
+.header_planet {
+    width: 1000px;
+    position: absolute;
+    bottom: -90px;
+    right: -110px;
+}
+
+.header_cursor {
+    width: 200px;
+    position: absolute;
+    bottom: 210px;
+    right: 340px;
+}
