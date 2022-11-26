@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <h2 class="header__title">Header</h2>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="container">
+                <h1 class="main__title">Main</h1>
+            </section>
+            <section class="container">
+                <h2 class="main__sub-title">Forms</h2>
+                <button class="button button-animation" id="create-an-account">Create an Account</button>
+                <button class="button button-animation" id="profile">Profile</button>
+            </section>
+
+            <!-- modal create account -->
+            <div class="modal-container">
+                <div class="modal modal--create-an-account">
+                    <button class="modal__close-button modal__close--create-an-account button button-animation">
+                        X
+                    </button>
+                    <form class="form" action="#">
+                        <h2 class="form__title">Create an Account</h2>
+                        <p class="form__text"></p>
+                        <section class="form__input-row">
+                            <label class="form__titles" for="first-name">
+                                First Name
+                                <input class="form__input-text" id="first-name" type="text">
+                            </label>
+                            <label class="form__titles" for="last-name">
+                                Last Name
+                                <input class="form__input-text" id="last-name" type="text">
+                            </label>
+                        </section>
+                        <section class="form__input-row form__input-row-column">
+                            <label class="form__titles" for="email">
+                                E-mail
+                                <input class="form__input-text" id="email" type="email">
+                            </label>
+                            <p class="form__fields-note">
+                                We'll never share your email with anyone else.
+                            </p>
+                        </section>
+                        <section class="form__input-row">
+                            <label class="form__titles-radio" for="male">
+                                <input class="form__input-radio" id="male" type="radio" name="gender-list">
+                                <div class="radio-icon"></div>
+                                Male
+                            </label>
+                            <label class="form__titles-radio" for="female">
+                                <input class="form__input-radio" id="female" type="radio" name="gender-list">
+                                <div class="radio-icon"></div>
+                                Female
+                            </label>
+                        </section>
+                        <section class="form__input-row">
+                            <label class="form__titles" for="country">
+                                Country
+                                <!-- <div class="form__combo-box-icon">X</div> -->
+                                <select class="form__input-text" name="#" id="country">
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="poland">Poland</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                            </label>
+                            <label class="form__titles" for="city">
+                                City
+                                <input class="form__input-text" type="text" id="city">
+                            </label>
+                        </section>
+                        <button class="form_sing-up-button button button-animation" type="submit">Sign Up</button>
+                        <p class="form__fields-note form__note">
+                            By clicking the 'Sign Up' button, you confirm that you accept our
+                            <a class="form_link" href="#">
+                                Terms of Use
+                            </a>
+                            and
+                            <a class="form_link" href="#">
+                                Privacy Policy
+                            </a>
+                            .
+                        </p>
+                        <div class="form_hr"></div>
+                        <section class="form__input-row form__input-row-center">
+                            <p class="form__note-text">
+                                Have an account?
+                            </p>
+                            <p class="form__note-text">
+                                <a class="form_link" href="#">
+                                    Log In
+                                </a>
+                            </p>
+                        </section>
+                    </form>
+                </div>
+                <!-- modal create account end-->
+                <!-- modal profile -->
+                <div class="modal modal--profile modal--profile-visible">
+                    <button class="modal__close-button modal__close-profile button button-animation">
+                        X
+                    </button>
+                    <form class="form form-profile" action="#">
+                        <h2 class="form__title">Profile</h2>
+                        <p class="form__text"></p>
+                        <section class="form__input-row form-profile__input-row">
+                            <div class="form-profile__image">
+                            </div>
+                            <label class="form__titles form__fields-note form-profile__image-download"
+                                for="download-img">
+                                <input class="form-profile__image-download-file" id="download-img" type="file">
+                                <input class="form__input-text form-profile__image-download-text" type="text"
+                                    readonly placeholder="0123456789">
+                                Up to 1 MB (300x300 px)
+                                <img class="form-profile__icon form-profile__icon-label"
+                                    src="./img/profile/🔹 photo-color.svg" alt="download photo icon">
+                            </label>
+                            <button
+                                class="form-profile__button-delete">
+                                <img class="form-profile__icon form-profile__icon-button" src="./img/profile/Trash.svg"
+                                    alt="trash">
+                            </button>
+                        </section>
+                        <section class="form__input-row">
+                            <label class="form__titles" for="first-name">
+                                Name
+                                <input class="form__input-text" id="first-name" type="text">
+                            </label>
+                            <label class="form__titles" for="email">
+                                E-mail
+                                <input class="form__input-text" id="email" type="email">
+                            </label>
+                        </section>
+                        <section class="form__input-row">
+                            <label class="form__titles" for="country">
+                                Country
+                                <!-- <div class="form__combo-box-icon">X</div> -->
+                                <select class="form__input-text" name="#" id="country">
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="poland">Poland</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                            </label>
+                            <label class="form__titles" for="city">
+                                City
+                                <input class="form__input-text" type="text" id="city">
+                            </label>
+                        </section>
+                        <section class="form__input-row">
+                            <label class="form__titles" for="zip-code">
+                                Zip Code
+                                <input class="form__input-text" id="zip-code" type="text">
+                            </label>
+                            <label class="form__titles" for="phone-number">
+                                Phone Number
+                                <input class="form__input-text" id="phone-number" type="tel">
+                            </label>
+                        </section>
+                        <button class="form-profile_button-update button button-animation" type="submit">Update</button>
+                        <div class="lin"></div>
+                    </form>
+                </div>
+                <!-- modal profile end-->
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <h2 class="footer__title">Footer</h2>
+            </div>
+        </footer>
+
+    </div>
+
+    <!--Обовязково додавати потрібно для JS -->
+    <script> var exports = {}; </script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

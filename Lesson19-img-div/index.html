@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <p>.image-cat-in-picture{
+        width: 200px;
+        height: 200px;
+        }
+    </p>
+    <picture class="picture">
+        <source srcset="./img/k2.jpg" media="(max-width: 600px)">
+        <img class="image-cat-in-picture" src="./img/k1.jpg" alt="MDN">
+    </picture>
+
+
+    <p>
+        .cat-as-div{
+        background-image: url('../img/k1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        }
+    </p>
+
+    <p>
+        @media (max-width:600px) {
+        .cat-as-div{
+        background-image: url('../img/k2.jpg');
+        }
+        }
+    </p>
+    <div class="cat-as-div">
+    </div>
+
+
+    <p>
+        .cat-in-card{
+        padding: 30px;
+        border:1px solid blue;
+        max-width:600px;
+        }
+    </p>
+    <p>
+        .cat-img-card{
+        width: 100%;
+        height: 100px;
+        }
+    </p>
+
+    <p>
+        .cat-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    </p>
+    <div class="cat-in-card">
+        <div class="cat-img-card">
+            <img class="cat-img" src="./img/k1.jpg" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat natus accusantium corrupti ipsam ducimus
+            labore facilis deserunt a optio! Veritatis?</p>
+    </div>
+
+</body>
+
+</html>
