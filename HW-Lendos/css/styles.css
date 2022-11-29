@@ -1,0 +1,209 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/* reset css end*/
+
+
+
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.font-main {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    /* Black */
+    color: #070707;
+}
+
+.font-h1 {
+    font-weight: 700;
+    font-size: 47.3392px;
+    line-height: 64px;
+    /* identical to box height */
+    text-align: left;
+}
+
+.font-h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+}
+
+.font-h3 {
+    /* = font-main */
+}
+
+.font-h4 {
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+
+/* fonts end*/
+
+
+
+
+
+/* global styles */
+.container{
+    padding: 0 250px 0 252px;
+}
+
+.menu {
+    list-style: none;
+}
+.font-menu{
+    color: #828282;
+}
+.font-menu:hover{
+    color: #070707;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.text-no-underline {
+    text-decoration: none;
+}
+
+.frame-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hr {
+
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+/* global styles end */
+
+
+
+
+
+/* header */
+.header {
+    margin-top: 23px;
+    padding: 0 252.4px 0 252px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    gap: 41px;
+    margin: 0 0 29px 0;
+}
+
+/* header end*/
+
+
+
+
+
+/* main */
+
+.hero {
+    padding: 34px 0 100px 0;
+}
+
+.hero__title {
+    margin: 0 0 38px 0;
+}
+/*------*/
+
+.main__section {
+    padding: 100px 0 100px 0;  
+    background: #F6F6F6;    
+}
+
+.main__section:nth-child(2n+1){
+    background: #FFFFFF;   
+}
+
+.about-me__title {
+    margin: 0 0 28px 0;
+}
+
+.about-me__text {
+    margin: 0 auto 36px;
+    max-width: 480px;
+}
+.about-me__text:last-child {
+    margin: 0 auto 0;
+}
+/*------*/
+
+
+.skills__title {
+    margin: 0 0 44px 0;
+}
+
+.skills__text {
+    margin: 0 0 78px 0;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 166px;
+    height: 223px;
+}
+
+.card__image-frame {
+    width: 89px;
+    height: 88px;
+    margin: 0 0 24px 0;
+}
+
+.card__title {
+    width: 89px;
+    margin: 0 0 59px 0;
+}
+
+.card__stars-containrer{
+    display: flex;
+    gap: 9px;
+}
+
+.card__star{
+    width:26px;
+    height:26px;
+    background-position: center center;
+    background-size: contain;
+}
+
+.card__star-true{
+    background-image: url('../img/Star-true.svg');
+}
+
+.card__star-false{
+    background-image: url('../img/Star-false.svg');
+}
+/*------*/
+
+/* main end*/
