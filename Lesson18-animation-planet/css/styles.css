@@ -38,9 +38,9 @@ body {
     position: relative;
 }
 
-.header__title{
-    /* none */
-}
+/* .header__title{
+        none 
+} */
 
 .header__text {
     max-width: 380px;

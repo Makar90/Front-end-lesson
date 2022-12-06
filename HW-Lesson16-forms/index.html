@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form class="form" action="">
+                <div class="form__container">
+                    <div class="form__fields">
+                        <span class="form__title">
+                            Повне ім'я 
+                        </span>
+                        <input class="form__input" type="text" id="name">
+                    </div>
+
+                    <div class="form__fields">
+                        <span class="form__title">
+                            Email
+                        </span>
+                        <input class="form__input" type="email" id="email">
+                    </div>
+
+                    <div class="form__fields">
+                        <span class="form__title">
+                            Пароль
+                        </span>
+                        <input class="form__input" type="password" id="pass">
+                    </div>
+
+                    <div class="form__fields">
+                        <span class="form__title">
+                            Пароль ще раз
+                        </span>
+                        <input class="form__input" type="password" id="pass2">
+                    </div>
+
+
+                    <div class="form__fields">
+                        <span class="form__title">
+                            Стать
+                        </span>
+                        <div class="form__input-input-row">
+                            <label class="" for="men">
+                                <input class="" type="radio" id="men" name="drone" value="men">
+                                чоловіча
+                            </label>
+
+                            <label class="" for="woomen">
+                                <input class="" type="radio" id="woomen" name="drone" value="woomen">
+                                жіноча
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="form__fields">
+                        <span class="form__title">
+                            Вік
+                        </span>
+                        <input class="form_item-input form_item-input--number" type="number" id="age" min="18" max="200">
+                    </div>
+                    
+
+                    <div class="form__fields">
+                        <span class="form__title">
+                            Курс
+                        </span>
+                        <select class="form_item-input form_item-input--select" name="" id="program" placeholder="=вибкрыть курс=">
+                            <option value="=виберіть курс=">=виберіть курс=</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="form__fields">
+                        <span class="form__title">
+                            Повна адреса
+                        </span>
+                        <textarea class="form_item-input" name="" cols="10" rows="5">Країна, регіон, місто/ селище, вулиця
+                        </textarea>
+                    </div>
+
+                    
+                    <label class="form_item-label" for="agree">
+                        <input type="checkbox" name="" id="agree">
+                        Я погоджуюсь з обробкою персональних данних
+                    </label>
+                    <div class="form_buttons">
+                        <button class="form__button form__reset" type="reset">Очистити форму</button>
+                        <button class="form__button form__reg" type="submit">Зареєструватися</button>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
