@@ -128,6 +128,12 @@ img {
 .hero__title {
     margin: 0 0 38px 0;
 }
+
+.hero__image-frame{
+    margin: 0 auto;
+    max-width: 943px;
+    max-height: 387px;
+}
 /*------*/
 
 .main__section {
@@ -163,6 +169,8 @@ img {
 .card-container{
     display: flex;
     justify-content: space-between;
+    gap:16px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -170,12 +178,12 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 166px;
-    height: 223px;
+    /* width: 166px;
+    height: 223px; */
 }
 
 .card__image-frame {
-    width: 89px;
+    max-width: 89px;
     height: 88px;
     margin: 0 0 24px 0;
 }
