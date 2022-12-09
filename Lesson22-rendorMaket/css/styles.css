@@ -108,7 +108,7 @@
     transition: 1s;    
 }
 
-.main__text:nth-child(3):hover  .main__text-icon{
+.main__text:nth-child(3):hover .main__text-icon{
     color: var(--color-green);
     transition: 1s;    
 }
