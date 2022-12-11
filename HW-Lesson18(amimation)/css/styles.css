@@ -1,0 +1,180 @@
+/* -----reset----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    object-fit: contain;
+}
+
+/* -----reset end ----- */
+
+
+
+
+
+/* ----- global ----- */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color:blueviolet;
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+.header {
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.main{
+    border-radius: 10px;
+    /* height: 100%; */
+}
+
+.footer {
+    margin-top: auto;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+/* ----- global end ----- */
+
+
+.main__cards-row {
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 90px;
+    height: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: 20px solid brown;
+    border-radius: 200px;
+}
+
+
+
+/* ----- card ----- */
+.card {
+    width: 100px;
+    height: 150px;   
+}
+
+.card__body{
+    width: 100%;
+    height: 100%;    
+    background-image: url('../img/back_1990-2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-radius: 10px; 
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.card:hover .card__body {
+    transition: all 0.5s;
+    transform: rotateY(360deg);
+    background-image: none;
+    background-color: white;
+}
+
+.card__face{ 
+    width: 100%;
+    height: 100%;    
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.card:hover .card__face {
+    transition: 0s 0.2s;
+    visibility: visible;
+}
+
+.card__type-pic {
+    width: 100%;
+    height: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-color: transparent;
+}
+
+.card__type-pic--kor{
+    height: 145px;
+}
+
+.card__type-pic--kor-buba{
+    background-image: url('../img/card-type-buba-kor.png');
+}
+
+.card__type-pic--kor-pk{
+    background-image: url('../img/card-type-pk-kor.png');
+}
+
+.card__type-pic--kor-chr{
+    background-image: url('../img/card-type-chr-kor.png');
+}
+
+.card__type-pic--kor-kr{
+    background-image: url('../img/card-type-kr-kor.png');
+}
+
+
+.card__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;  
+}
+
+
+.card__title--top {
+    top: 8px;
+    left: 8px;
+}
+
+.card__title-bottom {
+    bottom: 8px;
+    right: 8px;
+    transform: rotate(180deg);
+
+}
+
+.card__name {
+    font-size: 18px;
+}
+
+.card__type-pic--small {
+    width: 100%;
+    height: 14px;
+}
+
+.card__type-pic--buba {
+    background-image: url('../img/card-type-buba.png');
+}
+
+.card__type-pic--chr {
+    background-image: url('../img/card-type-chr.png');
+}
+
+.card__type-pic--pk {
+    background-image: url('../img/card-type-pk.png');
+}
+
+.card__type-pic--kr {
+    background-image: url('../img/card-type-kr.png');
+}
+
+/* ----- card end ----- */
