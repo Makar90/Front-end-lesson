@@ -2,18 +2,24 @@
     font-family: $sub-fonts;
     font-weight: 400;
 }
-*/
+
+.logo {
+    max-width: 134px;
+    height: 11px;
+}
+} */
 
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: $color-wrapper-background;
-    min-width: $wrapper-width-min;
+    background: #E5E5E5;
+    min-width: 389px;
 }
 
 .container {
-    max-width: $conteiner-width-max;
+    max-width: 1512px;
+    min-width: 389px;
     margin: 0 auto;
     padding: 0px 24px;
     position: relative;
@@ -25,25 +31,24 @@
 
     &:hover {
         cursor: pointer;
-        color: $color-hover-links-buttons-icons-thumbs;
+        color: orange;
         transform: scale(1.2);
     }
 
     &--icon {
         &:hover {
             cursor: pointer;
-            color: $color-hover-links-buttons-icons-thumbs;
+            color: orange;
         }
     }
 }
-
 .button-hover {
     transition: 0.2s ease-in-out;
 
     &:hover {
         cursor: pointer;
-        color: $color-black;
-        background-color: $color-hover-links-buttons-icons-thumbs;
+        color: blue;
+        background-color: orange;
         transform: scale(1.05);
     }
 }

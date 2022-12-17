@@ -1,54 +1,93 @@
 .footer {
-    background-color: $color-grey;
-    padding: 128px 0 141px;
     margin-top: auto;
+    background: $color-black;
+    //transform: matrix(-1, 0, 0, 1, 0, 0);
 
-    @media (max-width: $tablet) {
-        padding: 64px 0 68px;
+    &__row {
+        padding-top: 50px;
+        padding-right: 93px;
+        padding-bottom: 20px;
     }
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-
-        @media (max-width: $tablet) {
-            flex-direction: column;
-            gap: 48px;
-        }
-    }
-
-    &__title {
-        margin-bottom: 32px;
-
-        @media (max-width: $tablet) {
-            margin-bottom: 18px;
-        }
-    }
-
-    &__contact {
-        margin-bottom: 16px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    &__social-row {
+    &__row {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 78px;
     }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__description {
-        align-self: flex-end;
+    &__menu-row {
+        display: grid;
+        //grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+        //grid-column-gap: 85px;
+        grid-template-columns: repeat(3, 17%) 32% 17%;
 
         @media (max-width: $tablet) {
-            align-self: flex-start;
+            grid-template-columns: repeat(3, 29%);
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
         }
+    }
+
+    &__menu-item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: $color-opacity-gray;
+        text-transform: uppercase;
+    }
+
+    &__menu-row .footer__menu-item:last-child .footer__menu-row {
+        flex-direction: row;
+        gap: 13px;
+    }
+
+    &__menu-row .footer__menu-item .footer__menu-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+     &__menu-item .footer__menu-row .footer__menu-item {
+        text-transform: none;
+    }
+
+    &__menu-item-link {
+        color: $color-semi-gray;
+
+        &-svg path {
+            color: $color-black;
+        }
+
+        &-svg {
+            &--facebook:hover path {
+                color: $color-facebook-logo;
+            }
+
+            &--instagram:hover path {
+                color: $color-instagram-logo;
+            }
+
+            &--twitter:hover path {
+                color: $color-twitter-logo;
+            }
+
+            &--linkid:hover path {
+                color: $color-linkid-logo;
+            }
+        }
+    }
+
+    &__copyright {
+        /*individual font*/
+
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 25px;
+        /* identical to box height, or 208% */
+        text-align: center;
+        color: $color-white;
+        opacity: 0.4;
     }
 }

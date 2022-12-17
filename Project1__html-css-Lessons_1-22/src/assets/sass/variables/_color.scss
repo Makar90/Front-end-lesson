@@ -1,6 +1,4 @@
-// Color 
-
-// scss Змінна
+/* // scss Змінна
 $color-black: #000000;
 $color-white: #ffffff;
 $color-grey: #F4F4F4;
@@ -16,4 +14,35 @@ $color-moda-bg: rgba(0, 0, 0, 0.485);
     --color-black: #000000;
     --color-grey: #F4F4F4;
     // var(--color-grey)
-}
+} */
+
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-blue: blue;
+$color-red: #f11414;
+$color-red-dark: #d60505;
+$color-orange: #ef9f0d;
+$color-yellow: #e8e80e;
+$color-green: #0fa70f;
+$color-fiolent: #580a92;
+
+$color-semi-gray: #C4C4C4;
+
+$color-opacity-gray: rgba(196, 196, 196, 0.5);
+
+$color-wrapper-background: #E5E5E5;
+$color-scrollbar-track: #E1E1E1;
+$color-scrollbar-thumb: $color-black;
+$color-main-menu-active-pos-background: $color-black;
+
+$color-facebook-logo: rgb(23, 23, 246);
+$color-instagram-logo: red;
+$color-twitter-logo: rgb(69, 69, 252, 1);
+$color-linkid-logo: $color-green;
+
+$color-hover-links-buttons-icons-thumbs: orange;
+$color-hover-search-ico: $color-green;
+$color-hover-bag-hands-ico: $color-green;
+$color-hover-bag-body-ico: $color-red;
+$color-ham-menu-icon-color: $color-blue;
+$color-ham-menu-background: rgba(128, 128, 128, 0.61);

@@ -1,4 +1,6 @@
 .header {
+    //background-image: url(../../img/Logo.svg);
+
     &__row {
         display: flex;
         justify-content: space-between;
@@ -13,8 +15,7 @@
         gap: 50px;
     }
 
-    /* &__menu-hum-icon {
-    } */
+    &__menu-hum-icon {}
 
     &__menu-hum-label {
         display: none;
@@ -34,7 +35,7 @@
             flex-direction: column;
             justify-content: center;
             position: fixed;
-            background-color: $color-ham-menu-background;
+            background-color: rgba(128, 128, 128, 0.61);
             top: 0;
             left: 0;
             width: 100%;
@@ -58,34 +59,34 @@
         &--active {
             width: 163px;
             height: 46px;
-            background: $color-main-menu-active-pos-background;
+            background: #000000;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 4px;
             margin-right: 4px;
 
-            /* individual font */
-            font-family: $monserat;
+            font-family: 'Montserrat';
+            font-style: normal;
             font-weight: 800;
             font-size: 16px;
             line-height: 60px;
             /* identical to box height, or 375% */
             //text-align: center;
             letter-spacing: -0.05em;
-            color: $color-white;
+            color: #FFFFFF;
         }
     }
 
     &__menu-item-link {
-        /* individual font */
-        font-family: $poppins;
+        font-family: 'Poppins';
+        font-style: normal;
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
         /* identical to box height, or 117% */
         text-align: center;
-        color: $color-black;
+        color: #000000;
     }
 
     &__icon-menu-row {
@@ -97,17 +98,17 @@
 
     &__icon-menu-item-icon-serch {
         &:hover {
-            color: $color-hover-search-ico;
+            color: green;
         }
     }
 }
 
 .bascket-icon {
     &:hover .bascket-icon__hands {
-        color: $color-hover-bag-hands-ico;
+        color: green;
     }
 
     &:hover .bascket-icon__body {
-        color: $color-hover-bag-body-ico;
+        color: red;
     }
 }
